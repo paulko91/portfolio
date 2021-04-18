@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style>
+        .loginbox h1 {
+            text-align: center;
+        }
+
+        .login-input-section-wrap{
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-input-wrap{
+            width: 188px;
+            height :30px;
+        }
+
+        .password-wrap{
+            margin-top: 13px;
+        }
+        .login-input-wrap input{
+            border: 1px solid gray;
+            width:188px;
+            font-size: 14px;
+            height:30px;
+        }
+        .login-button-wrap {
+            padding-top: 13px;
+        }
+        .login-button-wrap button{
+            width: 188px;
+            height :35px;
+            font-size: 17px;
+            background-color: rgb(224, 224, 224);
+            color: black;
+        }
+
+        .Reg {
+            display: block;
+            font-size: 17px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <h1><a href="main.html">Sin A</h1>
+            <h3>Traditional Clothes<br/>& Bedding</a></h3> 
+        </div>  
+       
+    </header>
+    <div class="loginbox">
+        <h1>LOG IN</h1>
+
+        <section class="login-input-section-wrap">
+			<div class="login-input-wrap">	
+				<input placeholder="Username" type="text"></input>
+			</div>
+			<div class="login-input-wrap password-wrap">	
+				<input placeholder="Password" type="password"></input>
+			</div>
+			<div class="login-button-wrap">
+				<button type="submit" >Sign In</button>
+			</div>
+        </section>
+        
+        <br/>
+
+        <a href="register.html" class="Reg">Register Now</a>
+
+    </div>
+
+    <br/><br/>
+
+    <footer>
+        <div id= "sns">
+            
+            <a href="페이스북 주소"><img src="img/facebook.png" width="18px" height="18px" class="fb"></a>
+            
+            <a href="트위터 주소"><img src="img/twitter.png" width="18px" height="18px" class="twit"></a>
+            
+            <a href="인스타그램 주소"><img src="img/instagram.png" width="18px" height="18px" class="insta"></a>
+        </div>
+
+        <br/>
+            
+        <div id="phone">
+            <a><img src="img/phone.png" width="18px" height="18px"><span>031-255-6466</span></a>
+        </div>
+
+    </footer>
+</body>
+</html>
