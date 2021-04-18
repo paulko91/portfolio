@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 3em auto;
+    background-color: rgba(224, 224, 224, 0.66);
+    text-align: center;
+}
+
+.container h1 a{
+    position: relative;
+    font-size: 1.5em;
+    color: black;
+}
+
+.container h3 a{
+    color: black;
+}
+
+.container #login{
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    padding-bottom: 10%;
+}
+
+.navi {
+    margin: 0 36% auto;
+    
+}
+
+.navi ul {
+    list-style-type: none;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+.navi ul li {
+    
+    display: inline;
+    margin: auto;
+    float: left;
+}
+
+.navi ul li a{
+    background-color: rgba(228, 224, 224, 0.66);
+    margin: auto;
+    font-size: 15px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.navi ul li :hover{
+    background-color: rgb(95, 95, 95);
+}
+
+a {
+    text-decoration: none;
+}
+
+.photo1 {
+    position: relative;
+    padding-left: 25%
+}
+
+.photo2 {
+    position: absolute;
+    padding-left: 3%
+}
+
+.fb {
+    position: relative;
+    padding-left: 47%;
+}
+
+.twit {
+    position: absolute;
+    padding-left: 2%;
+}
+
+.insta {
+    position: absolute;
+    padding-left: 5%;
+}
+
+#phone a {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    padding-left: 45%;
+}
+
+#phone a span {
+    position: absolute;
+    padding-left: 2%;
+}
+

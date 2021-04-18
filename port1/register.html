@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <style>
+        .newRegi {
+            text-align: center;
+            padding-bottom: 2%;
+        }
+        .newRegi form p {
+            padding-top: 1%;
+        }
+        .newRegi form p span {
+            padding-right: 1%;
+            text-align: left;
+        }
+        
+    </style>
+    <script>
+        $(function(){
+            $("#pwd").keyup(function(){
+              $("#chkNotice").html("");
+            });
+        
+            $("#pwdChk").keyup(function(){
+        
+                if($("#pwd").val() != $("#pwdChk").val()){
+                  $("#chkNotice").html("비밀번호 일치하지 않음<br><br>");     
+                } else{
+                  $("#chkNotice").html("비밀번호 일치함<br><br>");
+                }
+        
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <h1><a href="메인페이지">Sin A</h1>
+            <h3>Traditional Clothes<br/>& Bedding</a></h3> 
+        </div>  
+       
+    </header>
+    <div class="newRegi">
+        <h1>Register</h1>
+        
+        <form name="regi" action="" method="POST">
+            <p><span>이름</span><input type="text" name="name" placeholder="Name"></p>
+            <p><span>아이디</span><input type="text" name="id" placeholder="Username"></p>
+            <p><span>비밀번호</span><input type="password" name="pwd" placeholder="Password"></p>
+            <p><span>비밀번호 확인</span><input type="password" id="pwdChk" placeholder="Password Check"></p>
+            <p><span>성별</span><input type="radio" value="Male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female<br/></p>
+            <p><span>이메일</span><input type="text" name="email">@<input type="text" name="email"></p>
+            <p><span>전화번호</span><input type="text" name="phone" placeholder="ex) 010-0000-0000"></p>
+            <p><span>주소</span><input type="text" name="address">&nbsp;<input type="button" value="주소 찾기" name="find"></p>
+            <p><span>상세주소</span><input type="text" name="detailaddress"></p>
+            <br/><br/>
+            <input type="submit" value="회원 가입">
+            <input type="reset" value="취소">
+        </form>
+
+    </div>
+        
+
+   
+
+    <br/><br/>
+
+    <footer>
+        <div id= "sns">
+            
+            <a href="페이스북 주소"><img src="img/facebook.png" width="18px" height="18px" class="fb"></a>
+            
+            <a href="트위터 주소"><img src="img/twitter.png" width="18px" height="18px" class="twit"></a>
+            
+            <a href="인스타그램 주소"><img src="img/instagram.png" width="18px" height="18px" class="insta"></a>
+        </div>
+
+        <br/>
+            
+        <div id="phone">
+            <a><img src="img/phone.png" width="18px" height="18px"><span>031-255-6466</span></a>
+        </div>
+
+    </footer>
+</body>
+</html>
